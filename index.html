@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f7f8fc">
+    <meta name="description" content="Read Fundamentals of Accounting online. Explore four complete study notes with an easy-to-use digital book reader.">
+    <title>Fundamentals of Accounting — Digital Book</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./app.js" defer></script>
+  </head>
+  <body>
+    <header class="topbar">
+      <button class="icon-button menu-button" id="menu-button" type="button" aria-label="Open book contents" aria-expanded="false">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+      <a class="brand" href="./" aria-label="Fundamentals of Accounting home">
+        <span class="brand-mark" aria-hidden="true">FA</span>
+        <span class="brand-title">Fundamentals <span>of Accounting</span></span>
+      </a>
+      <div class="topbar-actions">
+        <button class="search-trigger" id="header-search-button" type="button" aria-label="Search book">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 4.2 4.2"/></svg>
+          <span>Search the book</span>
+          <kbd>Ctrl K</kbd>
+        </button>
+        <button class="icon-button theme-button" id="theme-button" type="button" aria-label="Switch to dark theme" title="Switch theme">
+          <svg class="theme-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"/></svg>
+          <svg class="theme-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.2 15.1A8.5 8.5 0 0 1 8.9 3.8 8.6 8.6 0 1 0 20.2 15.1Z"/></svg>
+        </button>
+        <a class="download-button" href="./fundamentals-of-accounting.pdf" download>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0 4-4m-4 4-4-4M5 17v3h14v-3"/></svg>
+          <span>Download PDF</span>
+        </a>
+      </div>
+    </header>
+
+    <div class="book-layout">
+      <aside class="sidebar" id="sidebar" aria-label="Book contents">
+        <a class="sidebar-book" href="./">
+          <span class="brand-mark" aria-hidden="true">FA</span>
+          <span><strong>Fundamentals of</strong><strong>Accounting</strong></span>
+        </a>
+        <button class="sidebar-search" id="sidebar-search-button" type="button">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 4.2 4.2"/></svg>
+          <span>Search the book</span>
+          <kbd>/</kbd>
+        </button>
+        <nav class="sidebar-navigation" aria-label="Study notes">
+          <p class="nav-label">YOUR LIBRARY</p>
+          <button class="contents-link" id="full-book-button" type="button">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v17H6.5A2.5 2.5 0 0 0 4 22zM4 5.5v14A2.5 2.5 0 0 1 6.5 17H20"/></svg>
+            <span>Open full book</span>
+          </button>
+          <div class="nav-divider"></div>
+          <p class="nav-label">TABLE OF CONTENTS</p>
+          <ol class="chapter-nav" id="chapter-nav"></ol>
+        </nav>
+        <div class="sidebar-progress">
+          <div class="progress-label"><span>YOUR READING PATH</span><strong id="progress-count">0 / 4</strong></div>
+          <div class="progress-track" id="reading-progress" role="progressbar" aria-label="Study notes in reading path" aria-valuemin="0" aria-valuemax="4" aria-valuenow="0">
+            <span></span><span></span><span></span><span></span>
+          </div>
+          <p>Four focused study notes. One complete accounting foundation.</p>
+        </div>
+        <a class="sidebar-download" href="./fundamentals-of-accounting.pdf" download>
+          <span class="sidebar-download-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M12 3v12m0 0 4-4m-4 4-4-4M5 17v3h14v-3"/></svg>
+          </span>
+          <span><strong>Keep a copy</strong><small>Download the complete PDF</small></span>
+          <svg class="sidebar-download-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+        </a>
+      </aside>
+
+      <main class="main-content" id="main-content">
+        <section class="welcome" id="welcome">
+          <section class="hero" aria-labelledby="hero-title">
+            <div class="hero-copy">
+              <p class="eyebrow"><span class="eyebrow-dot"></span> ACCOUNTING FOUNDATION <span class="eyebrow-separator">·</span> STUDY RESOURCE</p>
+              <h1 id="hero-title">Fundamentals of<br><span>Accounting</span></h1>
+              <p class="hero-description">Build a strong foundation in financial and cost accounting with four carefully organized study notes, brought together in one calm, focused reading space.</p>
+              <div class="hero-actions">
+                <button class="primary-button" id="start-reading-button" type="button">
+                  <span>Start reading</span>
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>
+                </button>
+                <button class="text-button" id="explore-chapters-button" type="button">
+                  <span>Explore chapters</span>
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14m-7-7h14"/></svg>
+                </button>
+              </div>
+              <div class="hero-stats" aria-label="Book details">
+                <div class="hero-stat">
+                  <span class="stat-icon stat-icon-blue" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 4.5A2.5 2.5 0 0 1 7.5 2H20v18H7.5A2.5 2.5 0 0 0 5 22zM5 4.5v15A2.5 2.5 0 0 1 7.5 17H20"/></svg></span>
+                  <span><strong>257</strong><small>pages</small></span>
+                </div>
+                <span class="stat-divider"></span>
+                <div class="hero-stat">
+                  <span class="stat-icon stat-icon-violet" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 5h16M4 12h16M4 19h16"/><circle cx="8" cy="5" r="1"/><circle cx="15" cy="12" r="1"/><circle cx="10" cy="19" r="1"/></svg></span>
+                  <span><strong>04</strong><small>study notes</small></span>
+                </div>
+                <span class="stat-divider"></span>
+                <div class="hero-stat">
+                  <span class="stat-icon stat-icon-green" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3 4 7v5c0 5 3.4 8 8 9 4.6-1 8-4 8-9V7z"/><path d="m8.5 12 2.3 2.3 4.8-4.8"/></svg></span>
+                  <span><strong>Complete</strong><small>learning resource</small></span>
+                </div>
+              </div>
+            </div>
+            <div class="hero-visual" aria-hidden="true">
+              <div class="visual-orbit orbit-one"></div>
+              <div class="visual-orbit orbit-two"></div>
+              <svg class="accounting-illustration" viewBox="0 0 560 440" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                  <linearGradient id="desk" x1="66" y1="339" x2="493" y2="415" gradientUnits="userSpaceOnUse"><stop stop-color="#E9EEFC"/><stop offset="1" stop-color="#D9E3FA"/></linearGradient>
+                  <linearGradient id="cover" x1="157" y1="154" x2="272" y2="355" gradientUnits="userSpaceOnUse"><stop stop-color="#466EEB"/><stop offset="1" stop-color="#2447B7"/></linearGradient>
+                  <linearGradient id="paper" x1="271" y1="105" x2="432" y2="328" gradientUnits="userSpaceOnUse"><stop stop-color="#FFF"/><stop offset="1" stop-color="#F6F8FD"/></linearGradient>
+                  <filter id="shadow" x="78" y="58" width="428" height="355" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feGaussianBlur stdDeviation="13"/></filter>
+                </defs>
+                <ellipse cx="288" cy="364" rx="204" ry="33" fill="#B7C7EA" opacity=".34" filter="url(#shadow)"/>
+                <path d="M77 336c69-25 162-37 250-31 63 4 119 23 162 47 17 10 14 29-8 39-66 29-191 42-305 25-67-9-112-28-120-46-5-13 3-25 21-34Z" fill="url(#desk)"/>
+                <path d="M151 148c0-9 7-16 16-16h97l65 32v170c0 9-7 16-16 16H167c-9 0-16-7-16-16V148Z" fill="url(#cover)"/>
+                <path d="M261 132v32h68" fill="#7191F2"/>
+                <path d="M173 191h124M173 208h95M173 225h105" stroke="white" stroke-opacity=".48" stroke-width="5" stroke-linecap="round"/>
+                <path d="M172 272h112M172 286h87" stroke="white" stroke-opacity=".27" stroke-width="4" stroke-linecap="round"/>
+                <circle cx="181" cy="309" r="13" fill="white" fill-opacity=".12"/>
+                <path d="M259 162c0-10 8-18 18-18h137c10 0 18 8 18 18v145c0 10-8 18-18 18H277c-10 0-18-8-18-18V162Z" fill="#C5D2F2" opacity=".48"/>
+                <path d="M271 151c0-10 8-18 18-18h137c10 0 18 8 18 18v145c0 10-8 18-18 18H289c-10 0-18-8-18-18V151Z" fill="url(#paper)" stroke="#DDE4F1" stroke-width="2"/>
+                <path d="M294 175h118M294 190h75" stroke="#D7DEEB" stroke-width="4" stroke-linecap="round"/>
+                <path d="M296 244v-26M320 244v-43M344 244v-34M368 244v-57M392 244v-29" stroke="#4B6FE5" stroke-width="11" stroke-linecap="round"/>
+                <path d="m296 209 25-16 23 7 28-23 21 9 23-19" stroke="#35A887" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                <circle cx="296" cy="209" r="4" fill="white" stroke="#35A887" stroke-width="2"/>
+                <circle cx="344" cy="200" r="4" fill="white" stroke="#35A887" stroke-width="2"/>
+                <circle cx="393" cy="186" r="4" fill="white" stroke="#35A887" stroke-width="2"/>
+                <path d="M303 265h104M303 279h81" stroke="#DDE3EE" stroke-width="4" stroke-linecap="round"/>
+                <g transform="rotate(8 391 312)">
+                  <rect x="375" y="280" width="91" height="121" rx="13" fill="#14213D"/>
+                  <rect x="382" y="287" width="77" height="105" rx="9" fill="#202F4C"/>
+                  <rect x="390" y="298" width="61" height="24" rx="5" fill="#AFC2FB"/>
+                  <path d="M398 310h18m8 0h4" stroke="#2B49A4" stroke-width="3" stroke-linecap="round"/>
+                  <g fill="#677A9C"><rect x="390" y="330" width="12" height="11" rx="3"/><rect x="408" y="330" width="12" height="11" rx="3"/><rect x="426" y="330" width="12" height="11" rx="3"/><rect x="390" y="347" width="12" height="11" rx="3"/><rect x="408" y="347" width="12" height="11" rx="3"/><rect x="426" y="347" width="12" height="11" rx="3"/><rect x="390" y="364" width="12" height="11" rx="3"/><rect x="408" y="364" width="12" height="11" rx="3"/></g>
+                  <rect x="426" y="364" width="12" height="11" rx="3" fill="#5DDAAF"/>
+                </g>
+                <rect x="92" y="227" width="39" height="39" rx="12" fill="white"/>
+                <path d="M103 247h17m-8.5-8.5v17" stroke="#315BE8" stroke-width="2.5" stroke-linecap="round"/>
+                <rect x="423" y="90" width="51" height="51" rx="15" fill="white"/>
+                <path d="M438 119v-8m10 8V99m10 20v-13" stroke="#42A88D" stroke-width="5" stroke-linecap="round"/>
+                <path d="M436 128h25" stroke="#DEE5F1" stroke-width="3" stroke-linecap="round"/>
+                <circle cx="121" cy="152" r="5" fill="#A7BBF5"/>
+                <circle cx="475" cy="222" r="6" fill="#82D7BE"/>
+                <path d="M111 305h15m-7.5-7.5v15" stroke="#A9BDF4" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+              <div class="floating-note note-ledger"><span class="note-icon-box">↗</span><span><strong>Clear concepts</strong><small>Step by step</small></span></div>
+              <div class="floating-note note-balance"><span class="balance-dot"></span><span><strong>Build your foundation</strong><small>One note at a time</small></span></div>
+            </div>
+          </section>
+
+          <section class="chapter-section" id="chapter-section" aria-labelledby="chapter-heading">
+            <div class="section-heading">
+              <div>
+                <p class="eyebrow">A STRUCTURED LEARNING PATH</p>
+                <h2 id="chapter-heading">Explore the study notes</h2>
+                <p class="section-description">Choose a topic and pick up right where the ideas begin.</p>
+              </div>
+              <span class="section-count"><span>04</span> STUDY NOTES</span>
+            </div>
+            <div class="chapter-cards" id="chapter-cards"></div>
+          </section>
+
+          <footer class="welcome-footer">
+            <span>Made for clear, focused learning.</span>
+            <a href="./fundamentals-of-accounting.pdf" download>Download the complete book <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0 4-4m-4 4-4-4M5 17v3h14v-3"/></svg></a>
+          </footer>
+        </section>
+
+        <section class="reader" id="reader" aria-label="Book reader" hidden>
+          <div class="reader-topline">
+            <div class="breadcrumb"><button id="reader-home-button" type="button">Library</button><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg><span id="reader-breadcrumb">Study note</span></div>
+            <div class="reader-top-actions">
+              <span class="reader-page-chip" id="reader-page-chip">257 pages · 4 study notes</span>
+              <a class="reader-download" id="open-pdf-link" href="./fundamentals-of-accounting.pdf" target="_blank" rel="noopener" aria-label="Open the PDF in a new tab">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0 4-4m-4 4-4-4M5 17v3h14v-3"/></svg>
+              </a>
+            </div>
+          </div>
+          <div class="reader-heading-row">
+            <div class="reader-title">
+              <p class="eyebrow" id="reader-study-note">STUDY NOTE</p>
+              <h1 id="reader-heading">Fundamentals of Accounting</h1>
+            </div>
+            <div class="reader-navigation">
+              <button class="secondary-button" id="previous-button" type="button" disabled><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5m7 7-7-7 7-7"/></svg><span>Previous</span></button>
+              <button class="secondary-button next-button" id="next-button" type="button"><span>Next note</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-7-7 7 7-7 7"/></svg></button>
+            </div>
+          </div>
+          <div class="reader-progress" aria-label="Progress through the study notes">
+            <span id="progress-dot-1"></span><span id="progress-dot-2"></span><span id="progress-dot-3"></span><span id="progress-dot-4"></span>
+          </div>
+          <div class="reader-grid">
+            <div class="pdf-frame-wrap">
+              <iframe id="pdf-frame" title="Fundamentals of Accounting PDF reader"></iframe>
+              <div class="reader-fallback">Prefer a separate tab? <a id="open-pdf-text-link" href="./fundamentals-of-accounting.pdf" target="_blank" rel="noopener">Open this PDF</a></div>
+            </div>
+            <aside class="on-this-page" aria-label="In this study note">
+              <p class="on-page-title">IN THIS STUDY NOTE</p>
+              <nav class="section-nav" id="section-nav" aria-label="Sections in this study note"></nav>
+              <button class="back-to-top" id="back-to-top" type="button">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5m-7 7 7-7 7 7"/></svg>
+                <span>Back to top</span>
+              </button>
+            </aside>
+          </div>
+          <nav class="chapter-pagination" aria-label="Previous and next study notes">
+            <button class="pagination-link" id="previous-card" type="button">
+              <span class="pagination-direction"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5m7 7-7-7 7-7"/></svg> PREVIOUS STUDY NOTE</span>
+              <strong id="previous-title">Previous</strong>
+            </button>
+            <button class="pagination-link pagination-next" id="next-card" type="button">
+              <span class="pagination-direction">NEXT STUDY NOTE <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-7-7 7 7-7 7"/></svg></span>
+              <strong id="next-title">Next</strong>
+            </button>
+          </nav>
+        </section>
+      </main>
+      <button class="sidebar-scrim" id="sidebar-scrim" type="button" aria-label="Close book contents"></button>
+    </div>
+
+    <dialog class="search-dialog" id="search-dialog" aria-labelledby="search-title">
+      <div class="search-panel">
+        <div class="search-heading">
+          <div>
+            <p class="eyebrow">FIND A CONCEPT</p>
+            <h2 id="search-title">Search the book</h2>
+          </div>
+          <button class="icon-button search-close" id="search-close-button" type="button" aria-label="Close search">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m18 6-12 12M6 6l12 12"/></svg>
+          </button>
+        </div>
+        <label class="search-input-wrap" for="search-input">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 4.2 4.2"/></svg>
+          <input id="search-input" type="search" placeholder="Try “depreciation” or “balance sheet”" autocomplete="off" aria-controls="search-results">
+          <kbd>ESC</kbd>
+        </label>
+        <p class="search-status" id="search-status" aria-live="polite">Search chapter titles and the full text of the book.</p>
+        <div class="search-results" id="search-results" role="listbox" aria-label="Search results"></div>
+        <div class="search-footer">        <span>Search the complete book</span><span>↑ ↓ navigate · ↵ open</span></div>
+      </div>
+    </dialog>
+  </body>
+</html>
